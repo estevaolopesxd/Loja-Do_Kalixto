@@ -14,8 +14,6 @@ const Card = (props) => {
 
 
     const handleMouseLeave = () => {
-        // e.target
-        // btn.classList.remove("d-flex")
         setHover(false)
     }
 
@@ -29,6 +27,8 @@ const Card = (props) => {
                     <a href="#" className={ hover ? 'btn text-danger' : 'd-none' } id='btn'><i class="fa-sharp fa-solid fa-heart fa-2xl"></i></a>
                 </div>
             </div>
+
+
         </div>
     )
 }

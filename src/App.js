@@ -12,68 +12,74 @@ import Slider from './Components/Slider/Slider';
 import Wpp from './Components/Wpp/Wpp';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
+import FavoritesProvider from './contexts/FavoritesContext';
 
 
 function App() {
   return (
     <div className="App">
 
-     
-        <div className='info'>
-          <p>Telefone WhatsApp Contato</p>
-        </div>
 
-    
+      <div className='info'>
+        <p>Telefone WhatsApp Contato</p>
+      </div>
 
 
-   
+
+
+
 
       <BrowserRouter>
-      <Navbar />
-     
 
-      <section>
-        <Slider />
+        <FavoritesProvider>
 
-        <div className='personalizer'>
-
-          <div className='item'>
-            <i class="fa-solid fa-house-chimney"></i>
-            <p>Há X anos atendendo Belo Horizonte e regiõies.</p>
-          </div>
-
-          <div className='item'>
-            <i class="fa-solid fa-truck"></i>
-            <p>Frete Gratis</p>
-          </div>
-
-          <div className='item'>
-            <i class="fa-solid fa-check"></i>
-            <p>Garantia</p>
-          </div>
-
-          <div className='item'>
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            <p>Montagem inclusa</p>
-          </div>
+          <Navbar />
 
 
-          <div>
+          <section>
+            <Slider />
 
-          </div>
-        </div>
-      </section>
-        <Routes>
-          <Route basename="/" />
-          <Route path="/" element={<Home />} />
-          <Route path="/contato" element={<Contato />} />
-          <Route path='/favorites' element={<Favorites />} />
-        </Routes>
+            <div className='personalizer'>
+
+              <div className='item'>
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>Há X anos atendendo Belo Horizonte e regiõies.</p>
+              </div>
+
+              <div className='item'>
+                <i class="fa-solid fa-truck"></i>
+                <p>Frete Gratis</p>
+              </div>
+
+              <div className='item'>
+                <i class="fa-solid fa-check"></i>
+                <p>Garantia</p>
+              </div>
+
+              <div className='item'>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <p>Montagem inclusa</p>
+              </div>
+
+
+              <div>
+
+              </div>
+            </div>
+          </section>
+          <Routes>
+            <Route basename="/" />
+            <Route path="/" element={<Home />} />
+            <Route path="/contato" element={<Contato />} />
+            <Route path='/favorites' element={<Favorites />} />
+          </Routes>
+
+        </FavoritesProvider>
       </BrowserRouter>
 
 
 
-<Footer />
+      <Footer />
       <Wpp />
 
     </div>
