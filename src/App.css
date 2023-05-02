@@ -1,5 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -36,3 +42,62 @@
     transform: rotate(360deg);
   }
 }
+
+.info{
+  display:flex;
+  background-color: rgb(223, 223, 238);
+  padding-left: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.info p{
+  padding-left: 40px;
+  color: black;
+
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav-item{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-actions i {
+  color: black;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.menu{
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  flex-direction: row;
+  margin-left: 350px;
+}
+
+.menu a{
+  text-decoration: none;
+  margin-right: 50px;
+  color: black;
+}
+
+
+.personalizer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid black;
+
+}
+

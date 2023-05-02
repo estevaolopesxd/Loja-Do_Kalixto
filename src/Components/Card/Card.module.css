@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#card{
+    width: 18rem;
+    text-align: center;
+    align-items: center;
+}
+
+#card img{
+    padding-top: 10px;
+    width: 150px;
+}
