@@ -7,9 +7,16 @@
     width: 18rem;
     text-align: center;
     align-items: center;
+    height: 300px;
+    transition: ease-in-out;
 }
 
 #card img{
     padding-top: 10px;
     width: 150px;
 }
+
+#btn i {
+    width: 200px;
+}
+
